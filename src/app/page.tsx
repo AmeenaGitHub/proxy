@@ -83,7 +83,7 @@ export default function HomePage() {
             <Link
               href="/request/new"
               id="cta-need-blood"
-              className="inline-flex h-12 items-center justify-center rounded-xl bg-crimson px-8 text-base font-medium text-white transition-base hover:opacity-90 focus-visible:outline-crimson min-w-[180px]"
+              className="inline-flex h-12 items-center justify-center rounded-xl bg-crimson px-8 text-base font-medium text-black transition-base hover:opacity-90 focus-visible:outline-crimson min-w-[180px]"
             >
               Need Blood
             </Link>

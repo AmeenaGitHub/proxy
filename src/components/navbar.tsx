@@ -36,7 +36,7 @@ export function Navbar() {
           </Link>
           <Link
             href="/request/new"
-            className="inline-flex h-9 items-center rounded-lg bg-crimson px-4 text-sm font-medium text-white transition-base hover:opacity-90"
+            className="inline-flex h-9 items-center rounded-lg bg-crimson px-4 text-sm font-medium text-black transition-base hover:opacity-90"
           >
             Need Blood
           </Link>
@@ -83,7 +83,7 @@ export function Navbar() {
             <Link
               href="/request/new"
               onClick={() => setMenuOpen(false)}
-              className="inline-flex h-10 items-center justify-center rounded-lg bg-crimson text-sm font-medium text-white"
+              className="inline-flex h-10 items-center justify-center rounded-lg bg-crimson text-sm font-medium text-black"
             >
               Need Blood
             </Link>
