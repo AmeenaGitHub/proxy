@@ -16,7 +16,7 @@ export function Navbar() {
             </svg>
           </div>
           <span className="text-lg font-semibold tracking-tight text-foreground">
-            Rakt<span className="text-crimson">Proximo.</span>
+            <span className="text-crimson">Proximo.</span>
           </span>
         </Link>
 
