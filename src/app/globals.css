@@ -1,26 +1,197 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ========== RaktSetu Design Tokens ========== */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  /* Backgrounds */
+  --background: #FAF9F6;
+  --background-card: #FFFFFF;
+  --background-subtle: #F5F4F1;
+
+  /* Text */
+  --foreground: #0B0F0E;
+  --foreground-muted: #6B7280;
+  --foreground-subtle: #9CA3AF;
+
+  /* Crimson — urgency & primary actions only */
+  --crimson: #B3261E;
+  --crimson-light: #F9DEDC;
+  --crimson-dark: #8C1D18;
+
+  /* Green — confirmed, eligible */
+  --green: #14532D;
+  --green-light: #D1FAE5;
+  --green-muted: #166534;
+
+  /* Neutrals */
+  --border: #E5E5E5;
+  --border-strong: #D4D4D4;
+  --surface-hover: #F0EFEC;
+
+  /* Urgency accents */
+  --urgency-critical: #B3261E;
+  --urgency-urgent: #D97706;
+  --urgency-routine: #6B7280;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0B0F0E;
+    --background-card: #161B19;
+    --background-subtle: #1C2220;
+
+    --foreground: #F5F4F1;
+    --foreground-muted: #9CA3AF;
+    --foreground-subtle: #6B7280;
+
+    --crimson: #F2B8B5;
+    --crimson-light: #601410;
+    --crimson-dark: #F9DEDC;
+
+    --green: #86EFAC;
+    --green-light: #14532D;
+    --green-muted: #4ADE80;
+
+    --border: #2D3330;
+    --border-strong: #3D4440;
+    --surface-hover: #1C2220;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
   }
 }
+
+/* ========== Tailwind Theme Inline ========== */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--background-card);
+  --color-subtle: var(--background-subtle);
+  --color-muted: var(--foreground-muted);
+  --color-muted-foreground: var(--foreground-subtle);
+  --color-crimson: var(--crimson);
+  --color-crimson-light: var(--crimson-light);
+  --color-crimson-dark: var(--crimson-dark);
+  --color-green: var(--green);
+  --color-green-light: var(--green-light);
+  --color-green-muted: var(--green-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-surface-hover: var(--surface-hover);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ========== Base Styles ========== */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--crimson);
+  outline-offset: 2px;
+}
+
+/* ========== Utility Classes ========== */
+
+.container-main {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Card base */
+.card {
+  background: var(--background-card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Urgency border accents */
+.urgency-critical {
+  border-left: 3px solid var(--urgency-critical);
+}
+
+.urgency-urgent {
+  border-left: 3px solid var(--urgency-urgent);
+}
+
+.urgency-routine {
+  border-left: 3px solid var(--urgency-routine);
+}
+
+/* Skeleton loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--background-subtle) 25%, var(--border) 50%, var(--background-subtle) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 0.5rem;
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  line-height: 1.25rem;
+}
+
+.badge-critical {
+  background: var(--crimson-light);
+  color: var(--crimson);
+}
+
+.badge-urgent {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.badge-routine {
+  background: var(--background-subtle);
+  color: var(--foreground-muted);
+}
+
+.badge-success {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+/* Smooth transitions */
+.transition-base {
+  transition: all 150ms ease-in-out;
 }
