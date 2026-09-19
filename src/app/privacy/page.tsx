@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Model — RaktSetu",
-  description: "How RaktSetu protects donor and requester privacy at every step.",
+  title: "Privacy Model — Proximo.",
+  description: "How Proximo. protects donor and requester privacy at every step.",
 };
 
 const sections = [
   {
     id: "principle",
     title: "Core Principle",
-    content: `RaktSetu is built on one rule: **no personal contact information is ever shared until a donor explicitly accepts a blood request.** There is no public donor directory, no donor search, and no way to browse donor profiles. A donor is only ever reachable through a specific request they chose to respond to.`,
+    content: `Proximo. is built on one rule: **no personal contact information is ever shared until a donor explicitly accepts a blood request.** There is no public donor directory, no donor search, and no way to browse donor profiles. A donor is only ever reachable through a specific request they chose to respond to.`,
   },
   {
     id: "collected",
@@ -65,7 +65,7 @@ const sections = [
     items: [
       "A donor who was notified for **any** request in the last 24 hours is automatically excluded from new matching rounds.",
       "Donors are notified in small batches (typically 3× the units needed, capped at 10). The system waits for responses before sending the next batch.",
-      "This is the core design decision that differentiates RaktSetu from broadcast-style blood request systems.",
+      "This is the core design decision that differentiates Proximo. from broadcast-style blood request systems.",
     ],
   },
   {
@@ -91,7 +91,7 @@ export default function PrivacyPage() {
           Privacy Model
         </h1>
         <p className="mt-2 text-base leading-relaxed text-muted">
-          How RaktSetu keeps donor and requester data private — by design, not by policy.
+          How Proximo. keeps donor and requester data private — by design, not by policy.
         </p>
 
         <div className="mt-10 space-y-10">

@@ -1,5 +1,5 @@
 /**
- * RaktSetu — Auth & Session Cookie Helper
+ * Proximo. — Auth & Session Cookie Helper
  *
  * Phone-number + OTP stub login with signed httpOnly cookie.
  * In demo mode, accepts any 6-digit code and logs generated OTPs to dev panel.
@@ -7,7 +7,7 @@
 
 import { cookies } from "next/headers";
 
-const COOKIE_NAME = "raktsetu_session";
+const COOKIE_NAME = "Proximo._session";
 
 export interface SessionData {
   donorId?: string;

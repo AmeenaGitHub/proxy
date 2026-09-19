@@ -1,5 +1,5 @@
 /**
- * RaktSetu — Pure Matching Engine
+ * Proximo. — Pure Matching Engine
  *
  * Single pure function `findEligibleDonors(request, allDonors, now)`
  * with NO database or framework dependencies. Fully unit testable.

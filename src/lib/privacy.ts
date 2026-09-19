@@ -1,5 +1,5 @@
 /**
- * RaktSetu — Privacy & Redaction Layer
+ * Proximo. — Privacy & Redaction Layer
  *
  * Strict server-side redaction helpers.
  * Phone numbers and surnames are masked by default UNLESS an explicit

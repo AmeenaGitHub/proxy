@@ -10,12 +10,12 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "RaktSetu — District Blood Donor Matching",
+  title: "Proximo. — District Blood Donor Matching",
   description:
     "Smart, private blood donor matching for Ernakulam district. Find compatible donors near you without exposing personal data.",
   keywords: ["blood donation", "donor matching", "Ernakulam", "Kerala", "blood bank"],
   openGraph: {
-    title: "RaktSetu — District Blood Donor Matching",
+    title: "Proximo. — District Blood Donor Matching",
     description: "Smart, private blood donor matching for your district.",
     type: "website",
   },

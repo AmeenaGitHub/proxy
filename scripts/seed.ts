@@ -1,5 +1,5 @@
 /**
- * RaktSetu Seed Script
+ * Proximo. Seed Script
  *
  * Seeds the database with:
  * - ~150 donors across real Ernakulam pincodes/wards
@@ -242,7 +242,7 @@ function generateDonors(count: number): DonorRow[] {
 // ============================================================
 
 async function seed() {
-  console.log("🩸 RaktSetu Seed Script\n");
+  console.log("🩸 Proximo. Seed Script\n");
 
   // Clear existing data (in order due to FK constraints)
   console.log("Clearing existing data...");

@@ -75,7 +75,7 @@ export default function HomePage() {
 
           <p className="mt-4 max-w-lg text-base leading-relaxed text-muted sm:text-lg">
             No more WhatsApp forwards reaching the wrong blood group.
-            RaktSetu matches verified, eligible donors to real requests — 
+            Proximo. matches verified, eligible donors to real requests — 
             and never shares a phone number without consent.
           </p>
 
@@ -120,7 +120,7 @@ export default function HomePage() {
         <div className="container-main">
           <div className="text-center">
             <h2 id="how-heading" className="text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
-              How RaktSetu works
+              How Proximo. works
             </h2>
             <p className="mt-2 text-sm text-muted max-w-md mx-auto">
               From request to donation in four steps — privacy-first at every stage.

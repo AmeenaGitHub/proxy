@@ -1,4 +1,4 @@
-# RaktSetu (रक्तसेतु) — District Blood Donor Matching Platform
+# Proximo. (रक्तसेतु) — District Blood Donor Matching Platform
 
 > **Privately, Medically & Intelligently connecting blood donors with hospital emergencies in Ernakulam District.**
 
@@ -12,8 +12,8 @@ Blood donation coordination today relies heavily on broadcast WhatsApp forwards.
 3. **Severe Privacy Breaches**: Personal mobile phone numbers are exposed to hundreds of strangers.
 4. **WhatsApp Fatigue**: Donors are repeatedly pinged after a need has already been met, causing them to mute or leave donor groups.
 
-### **RaktSetu's Solution**
-RaktSetu is a district-level intelligent matching engine and private donor management system built with Next.js 15, TypeScript, Tailwind CSS v4, and PostgreSQL (Supabase).
+### **Proximo.'s Solution**
+Proximo. is a district-level intelligent matching engine and private donor management system built with Next.js 15, TypeScript, Tailwind CSS v4, and PostgreSQL (Supabase).
 
 - **Privacy First**: Phone numbers and surnames are masked server-side by default (`+91 9•••• ••23`). Contacts are revealed **ONLY** after a donor accepts a request, creating a logged audit trail (`contact_reveals`).
 - **Medical Interval Enforcement**: Strict enforcement of National Blood Transfusion Council (NBTC India) guidance (90d M / 120d F cooldown).
@@ -107,8 +107,8 @@ Test Files  1 passed (1)
 ### Installation & Server Execution
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-repo/raktsetu.git
-cd raktsetu
+git clone https://github.com/your-repo/Proximo..git
+cd Proximo.
 
 # 2. Install dependencies
 npm install
@@ -138,4 +138,4 @@ The application consists of 5 core PostgreSQL tables:
 ## 📜 License & Hackathon Submission
 
 Built for the District Blood Donor Matching Hackathon selection submission.
-`RaktSetu — Connecting Lifesavers, Protecting Privacy.`
+`Proximo. — Connecting Lifesavers, Protecting Privacy.`

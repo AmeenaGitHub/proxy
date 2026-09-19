@@ -402,7 +402,7 @@ export function DemoClient({ initialDonors }: Props) {
             <span className="text-xs text-muted">Formula: min(units_needed * 3, 10)</span>
           </div>
           <p className="mt-1 text-xs text-muted">
-            Rather than broadcasting WhatsApp forwards to all {matchResult.eligible.length} eligible donors, RaktSetu notifies only {batchToNotify.length} donors in Batch 1 to protect against fatigue.
+            Rather than broadcasting WhatsApp forwards to all {matchResult.eligible.length} eligible donors, Proximo. notifies only {batchToNotify.length} donors in Batch 1 to protect against fatigue.
           </p>
         </div>
       </div>

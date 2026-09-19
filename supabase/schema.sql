@@ -1,4 +1,4 @@
--- RaktSetu Database Schema
+-- Proximo. Database Schema
 -- Run this in the Supabase SQL Editor
 
 -- ============================================
